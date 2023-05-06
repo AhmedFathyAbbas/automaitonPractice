@@ -67,6 +67,8 @@ public class PurchaseFullCycle extends BaseTest {
         System.out.println ("yida" );
         System.out.println ("hello from branching" );
         System.out.println ("yida" );
+        System.out.println ("hello from branching" );
+        System.out.println ("yida2" );
     }
     }
 
