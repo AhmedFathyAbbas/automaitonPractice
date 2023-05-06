@@ -2,10 +2,11 @@ package TestCases;
 
 import Pages.*;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-
+@Test
 public class PurchaseFullCycle extends BaseTest {
     HomePage hp = new HomePage (baseTestDriver);
     RegisterPage rp = new RegisterPage (baseTestDriver );
@@ -15,7 +16,6 @@ public class PurchaseFullCycle extends BaseTest {
     CheckoutPages cp = new CheckoutPages (baseTestDriver);
     SuccsesPage sp = new SuccsesPage (baseTestDriver);
 
-    @Test
     public void checkoutFullValidTestCase() {
         //Registration test Steps
         hp.clickOnRegisterLink ();
@@ -63,12 +63,7 @@ public class PurchaseFullCycle extends BaseTest {
         cp.clickOnConfirmBtn ();
 
         Assert.assertEquals ( sp.getSuccessMsg () , "Your order has been successfully processed!" );
-        System.out.println ("hello from branching" );
-        System.out.println ("yida" );
-        System.out.println ("hello from branching" );
-        System.out.println ("yida" );
-        System.out.println ("hello from branching" );
-        System.out.println ("yida2" );
+
 
 
     }
