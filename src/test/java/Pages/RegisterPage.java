@@ -62,7 +62,7 @@ public class RegisterPage extends BasePage {
 
     public void enterEmail ( ) {
         waitElements ( basePageDriver, Duration.ofSeconds ( 20 ),emailfiled );
-        basePageDriver.findElement ( emailfiled ).sendKeys ( "ahmed.fathy1@gmail.com" );
+        basePageDriver.findElement ( emailfiled ).sendKeys ( "ahmed.fathy12@gmail.com" );
     }
 
     public void enterCompanyName ( ) {
@@ -78,12 +78,12 @@ public class RegisterPage extends BasePage {
     public void enterPassword ( ) {
         waitElements ( basePageDriver, Duration.ofSeconds ( 20 ),passwordFiled );
 
-        basePageDriver.findElement ( passwordFiled ).sendKeys ( "fathy1234567" );
+        basePageDriver.findElement ( passwordFiled ).sendKeys ( "fathy12345678" );
     }
 
     public void confirmPassword ( ) {
         waitElements ( basePageDriver, Duration.ofSeconds ( 20 ),confirmPassword );
-        basePageDriver.findElement ( confirmPassword ).sendKeys ( "fathy1234567" );
+        basePageDriver.findElement ( confirmPassword ).sendKeys ( "fathy12345678" );
     }
 
     public void clickOnRegister ( ) {

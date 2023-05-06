@@ -15,12 +15,12 @@ public class LoginPage extends BasePage {
 
     public void enterEmail () {
 
-        basePageDriver.findElement (emailFiled).sendKeys ("ahmed.fathy1@gmail.com");
+        basePageDriver.findElement (emailFiled).sendKeys ("ahmed.fathy12@gmail.com");
     }
 
     public void enterPassword () {
 
-        basePageDriver.findElement (passwordFiled).sendKeys ("fathy1234567");
+        basePageDriver.findElement (passwordFiled).sendKeys ("fathy12345678");
     }
 
     public void clickOnRememberMe () {
