@@ -63,6 +63,7 @@ public class PurchaseFullCycle extends BaseTest {
         cp.clickOnConfirmBtn ();
 
         Assert.assertEquals ( sp.getSuccessMsg () , "Your order has been successfully processed!" );
+        System.out.println ("hello from branching" );
     }
     }
 
